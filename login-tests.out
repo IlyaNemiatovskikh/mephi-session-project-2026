@@ -1,0 +1,10 @@
+окт 10 21:45:54 mephi-2026.domain.local audit[651]: SYSCALL arch=c000003e syscall=1 success=yes exit=1 a0=3 a1=7fff3577ee00 a2=1 a3=7fff3577eb17 items=0 ppid=1 pid=651 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=tty1 ses=1 comm="login" exe="/usr/bin/login" subj=system_u:system_r:local_login_t:s0-s0:c0.c1023 key=(null)
+окт 10 21:45:55 mephi-2026.domain.local login[651]: pam_unix(login:session): session opened for user root(uid=0) by root(uid=0)
+окт 10 21:45:55 mephi-2026.domain.local login[651]: ROOT LOGIN ON tty1
+окт 10 22:31:25 mephi-2026.domain.local login[1278]: pam_access(login:account): access denied for user `curator1' from `tty2'
+окт 10 22:31:25 mephi-2026.domain.local login[1278]: Permission denied
+окт 10 22:31:48 mephi-2026.domain.local login[1289]: pam_access(login:account): access denied for user `curator2' from `tty2'
+окт 10 22:31:48 mephi-2026.domain.local login[1289]: Permission denied
+окт 10 22:32:09 mephi-2026.domain.local audit[1296]: SYSCALL arch=c000003e syscall=1 success=yes exit=4 a0=3 a1=7fffaf572c30 a2=4 a3=7fffaf572944 items=0 ppid=1 pid=1296 auid=5501 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=tty2 ses=3 comm="login" exe="/usr/bin/login" subj=system_u:system_r:local_login_t:s0-s0:c0.c1023 key=(null)
+окт 10 22:32:09 mephi-2026.domain.local login[1296]: pam_unix(login:session): session opened for user user1(uid=5501) by user1(uid=0)
+окт 10 22:32:09 mephi-2026.domain.local login[1296]: LOGIN ON tty2 BY user1
